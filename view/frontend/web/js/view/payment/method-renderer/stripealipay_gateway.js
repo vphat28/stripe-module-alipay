@@ -50,10 +50,6 @@ define(
                 var active = window.checkoutConfig.payment[this.getCode()].active;
                 var quoteData = window.checkoutConfig.quoteData;
 
-                if (quoteData.quote_currency_code !== 'EUR') {
-                    active = false;
-                }
-
                 var checkAllowSpecificCountry = window.checkoutConfig.payment[this.getCode()].allowspecific;
                 if (checkAllowSpecificCountry == 1) {
                     var checkSpecificCountry = window.checkoutConfig.payment[this.getCode()].specificcountry;
